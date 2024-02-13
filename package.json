@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "cmpl:sass": "node-sass sass/main.scss css/style.css"
+    "cmpl:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "keywords": [],
   "author": "Bayezid",

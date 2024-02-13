@@ -1,11 +1,3 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
 * {
   margin: 0;
   padding: 0;
@@ -19,24 +11,35 @@ body {
   color: #777;
   padding: 30px; }
 
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.808), rgba(40, 180, 133, 0.897)), url("/img/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  position: relative; }
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
-.logo-box {
-  position: absolute;
-  top: 40px;
-  left: 40px; }
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
 .logo {
   height: 35px; }
+  .logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
 
 .heading-primary {
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   margin-bottom: 60px; }
 
@@ -63,28 +66,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center; }
 
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px); }
-  80% {
-    transform: translateX(20px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px); }
-  80% {
-    transform: translateX(-20px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
@@ -123,3 +105,11 @@ body {
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.808), rgba(40, 180, 133, 0.897)), url("/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  position: relative; }
