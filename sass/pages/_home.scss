@@ -2,5 +2,21 @@
   background-color: $color-grey-light;
   padding: 25rem 0;
   margin-top: -24vh;
-  height: 120vh;
+  height: 135vh;
+}
+.section-features {
+  padding: 10rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.808),
+      rgba($color-primary-dark, 0.897)
+    ),
+    url("/img/nat-4.jpg");
+  background-size: cover;
+  height: 100vh;
+  margin-top: -4rem;
+  transform: skewY(-4deg);
+  & > * {
+    transform: skewY(4deg);
+  }
 }
