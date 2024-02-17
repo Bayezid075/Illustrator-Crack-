@@ -281,12 +281,21 @@ body {
       border-bottom: 2px solid #eee; }
       .card-details li:note(:last-child) {
         border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .card__price-box {
+    text-align: center;
+    color: #fff; }
+  .card__price-value {
+    font-size: 4rem; }
 
 .tour_row {
   padding: 0 15%; }
 
 .col-1-of-3 {
   width: 25%;
-  background: aqua;
   float: left;
   margin: 3%; }

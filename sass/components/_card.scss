@@ -94,4 +94,19 @@
       }
     }
   }
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+  }
+  &__price-only {
+  }
+  &__price-value {
+    font-size: 4rem;
+  }
 }
